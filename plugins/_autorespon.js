@@ -17,7 +17,7 @@ handler.all = async function (m, { isBlocked }) {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
                 isBanned ? 'ZxyuuBotz tidak aktif di chat' : banned ? 'kamu dibanned' : 'Ada Apa ya tag-tag saia ?\nApakah Ada Bansos ?',
-                'ZxyuuBotz',
+                'anda kena ban',
                 isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
@@ -37,7 +37,7 @@ handler.all = async function (m, { isBlocked }) {
 ║
 ╠═〘 𝐏𝐄𝐌𝐁𝐀𝐘𝐀𝐑𝐀𝐍 〙 ═
 ╠➥ Pulsa
-║- 082128475388 ( Pulsa Telkomsel )
+║- 0812-1571-0461 ( Pulsa Telkomsel )
 ╠═〘 Zxyuu Botz 〙 ═`.trim(), '🌟 zxyuubotz', 'Pemilik\nBot', '#owner', 'Ga jadi deh..', 'gajadi', m)
 }
 

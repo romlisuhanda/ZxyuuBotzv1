@@ -8,7 +8,7 @@ remoteJid: 'status@broadcast'
 },
 message: {
 locationMessage: {
-name: 'My Mastah',
+name: 'Owner ZxyuuBotz',
 jpegThumbnail: fs.readFileSync('./src/Dark.jpg')
   }
  }
@@ -17,7 +17,7 @@ let list = []
   for (let i of owner.map(v => v + '@s.whatsapp.net')) {
   list.push({
             "displayName": this.getName(i),
-            "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${this.getName(i)}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Nomor Orang\nEND:VCARD`
+            "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${this.getName(i)}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Owner Ngab🗿\nEND:VCARD`
           })
   }
         test = await this.sendMessage(m.chat, {

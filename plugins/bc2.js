@@ -21,7 +21,7 @@ let handler  = async (m, { conn, text }) => {
   let content = (/bc|broadcast/i.test(text) ? text : text)
   for (let id of chats) conn.relayWAMessage(conn.prepareMessageFromContent(id, {
         "listMessage": {
-          "title": `──────❏ *ʙʀᴏᴀᴅᴄᴀsᴛ* ❏──────`.trim(),
+          "title": `──────❏ *ZXYUU BROADCAST* ❏──────`.trim(),
           "description": content.trim(),
           "footerText": 
 global.botdate,

@@ -239,8 +239,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 │⬡ WhatsApp Web Version : ${conn.browserDescription[2]}
 │⬡ Platform : Heroku
 ┗──────────⬣
-ZxyuuRomz-XzyuuNaii`.trim(),
-                        "footerText": "ZxyuuBotz",
+_*Bot By Romli*_`.trim(),
+                        "footerText": "ZxyuuRomz-XzyuuNaii",
                         "buttonText": "Klik Disini Ngab",
                         "listType": "SINGLE_SELECT",
                         "sections": [
@@ -287,7 +287,7 @@ ZxyuuRomz-XzyuuNaii`.trim(),
                                     "rowId": ".menu News"
                                 }, { 
                                     "title": "☰ Game",
-                                    "description": "Game Di One Botz",
+                                    "description": "Game Di Zxyuu Botz",
                                     "rowId": ".menu game"
                                 }, { 
                                     "title": "️☰ Epic Rpg",
@@ -299,7 +299,7 @@ ZxyuuRomz-XzyuuNaii`.trim(),
                                     "rowId": ".menu xp"
                                 }, { 
                                     "title": "☰ NSFW",
-                                    "description": "Lagi Puasa Woy..",
+                                    "description": "Astagfirullah,Tobat banh..!",
                                     "rowId": ".menu nsfw"
                                 }, { 
                                     "title": "️☰ Random Image",

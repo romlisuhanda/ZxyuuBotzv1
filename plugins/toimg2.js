@@ -9,7 +9,7 @@ const anu = {
                         },
        message: {
                     documentMessage: {
-                    title: 'One.jpg', 
+                    title: 'Dah Kak ZxyuuBotz Proses', 
                     jpegThumbnail: fs.readFileSync('./src/One.jpg')
                           }
                         }
@@ -24,7 +24,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   if (/webp/.test(mime)) {
     out = await webp2png(media)
   }
-  await conn.sendFile(m.chat, out, 'out.png', '*Done..*', anu, false, { thumbnail: fs.readFileSync('./src/IMG-20220404-WA0381.png')})
+  await conn.sendFile(m.chat, out, 'out.png', '*Dah Nih..*', anu, false, { thumbnail: fs.readFileSync('./src/IMG-20220404-WA0381.png')})
 }
 handler.help = ['toimg']
 handler.tags = ['sticker']

@@ -68,7 +68,7 @@ handler.all = async function (m, { isBlocked }) {
 if (new Date() * 1 - setting.status > 1000) {
         let _uptime = process.uptime() * 1000
         let uptime = clockString(_uptime)
-        await this.setStatus(`⏲️ Runtime: ${uptime} | 🛰 Mode: ${global.opts['self'] ? 'Bot by romli' : setting.groupOnly ? 'Hanya Grup' : 'Zxyuu'} | RomzBot`).catch(_ => _)
+        await this.setStatus(`IM RomliBotz🤖 Aktif selama ${uptime} | Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'} |ZxyuuBotz by.Romli' : 'Zxyuu'} | RomzBot`).catch(_ => _)
         setting.status = new Date() * 1
     }
 

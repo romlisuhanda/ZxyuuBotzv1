@@ -5,11 +5,11 @@ let cds = `${DeTik(new Date - LastClaim)}`
 let cd1 = Math.ceil(44 - cdm)
 let cd2 = Math.ceil(59 - cds)
   if (new Date - global.db.data.users[m.sender].lastclaim > 2700000) {
-    global.db.data.users[m.sender].uang += 7000
-    global.db.data.users[m.sender].exp += 100
-    m.reply('Nih gaji lu +Rp7000')
+    global.db.data.users[m.sender].uang += 70000000000000000
+    global.db.data.users[m.sender].exp += 100000000000000000
+    m.reply('Nih gaji lu +Rp3.000.000.000.000.00')
     global.db.data.users[m.sender].lastclaim = new Date * 1
-  } else throw `Lu udah ambil jatah hari ini.\n\nTunggu ${cd1} Menit ${cd2} Detik!`
+  } else throw `Lu udah ambil gaji anjg, serakah amat lu!!.\n\nTunggu ${cd1} Menit ${cd2} Detik!`
 }
 handler.help = ['gaji', 'gajian']
 handler.tags = ['rpg']

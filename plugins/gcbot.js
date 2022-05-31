@@ -3,7 +3,7 @@ let fetch = require('node-fetch')
 let handler = async (m, { conn, text }) => {
   let ext= `
 ━━━━━━━━━━━━━━━
-_*Grup Official*_
+_*Mari marii...*_
 ━━━━━━━━━━━━━━━
 ┏━━━━━━━━━━━━━ꕥ
 ┃ *_Grup Utama_*  : https://chat.whatsapp.com/ItgtoArOdVD46P7S9cA179 => Ramein

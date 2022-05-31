@@ -662,9 +662,9 @@ global.dfail = (type, m, conn) => {
   }[type]
   if (botAdmin) return conn.sendButton(m.chat, botAdmin, 'Lupa Saya', 'Eh iya ya', 'Nanii', m)
   let unreg = {
-    unreg: `Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar David.16*`
+    unreg: `Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Romli.16*`
   }[type]
-  if (unreg) return conn.sendButton(m.chat, `Halo, ${name} Sebelum menggunakan fitur di bot, harap Sign Up ( Daftar ) Terlebih dahulu\nJika Button Tidak Merespon Daftar Manual:\n*.daftar Nama.Umur*\nContoh: *.daftar ${name}.15*`, watermark, 'Sign Up', `#daftar ${name}.17`, { key: { fromMe: false, remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { message: `OneBotz\nJam ${time}`, itemCount: 2022, thumbnail: fs.readFileSync('./src/Dark.jpg')}}})
+  if (unreg) return conn.sendButton(m.chat, `Halo, ${name} Sebelum menggunakan fitur di bot, harap Sign Up ( Daftar ) Terlebih dahulu\nJika Button Tidak Merespon Daftar Manual:\n*.daftar Nama.Umur*\nContoh: *.daftar ${name}.15*`, watermark, 'Sign Up', `#daftar ${name}.17`, { key: { fromMe: false, remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { message: `ZxyuuBotz\nJam ${time}`, itemCount: 2022, thumbnail: fs.readFileSync('./src/Dark.jpg')}}})
 }
 
 let chalk = require('chalk')

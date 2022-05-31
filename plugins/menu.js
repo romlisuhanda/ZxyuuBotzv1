@@ -259,7 +259,7 @@ ZxyuuRomz-XzyuuNaii`.trim(),
                                     "rowId": ".notes"
                                 }, {
                                     "title": "Pertanyaan Tentang Bot Ini",
-                                    "description": "Especially WhatsApp users whose numbers start with +212",
+                                    "description": "🗿",
                                     "rowId": ".qna"
                                     
                                 }, {

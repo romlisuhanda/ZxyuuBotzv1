@@ -223,8 +223,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                     "listMessage":  {
                         "title": `Hai ${name}, ${ucapan()}`.trim(),
                         "description": `┏━━〔 *ZxyuuBotz* 〕━ꕥ
-┃✾ 𝖠𝗄𝗍𝗂𝖿 𝖲𝖾𝗅𝖺𝗆𝖺 _*${uptime}*_
-┃✾ *Info Batre Bot* _*${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}*_
+┃✾ _*RuntimeBotz*_ _*${uptime}*_
+┃✾ *Info Batre* _*${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}*_
 ┃✾ _*${Object.keys(global.db.data.users).length}*_ *User*
 ┃✾ _*${totaljadibot.length}*_ _*Jadibot*_
 ┃✾ _*${conn.blocklist.length}*_ _*Bloked*_

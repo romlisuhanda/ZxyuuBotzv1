@@ -16,8 +16,8 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? '𝖮𝗇𝖾 𝖡𝗈𝗍 𝗍𝗂𝖽𝖺𝗄 𝖺𝗄𝗍𝗂𝖿' : banned ? 'kamu dibanned' : 'Ada Apa ya tag-tag saia ?\nApakah Ada Bansos ?',
-                '𝗢𝗻𝗲 𝗕𝗼𝘁 𝗯𝘆 𝗗𝗮𝘃𝗶𝗱',
+                isBanned ? 'ZxyuuBotz tidak aktif di chat' : banned ? 'kamu dibanned' : 'Ada Apa ya tag-tag saia ?\nApakah Ada Bansos ?',
+                'ZxyuuBotz',
                 isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
@@ -29,7 +29,7 @@ handler.all = async function (m, { isBlocked }) {
 
     // ketika ada yang invite/kirim link grup di chat pribadi
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
-        this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `╠═〘 Beli Bot 〙 ═
+        this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `╠═〘 *Sewa Kontol* 〙 ═
 ╠➥ *1 Minggu* :      *Rp. 5.000*
 ╠➥ *2 Minggu* : *Rp. 10.000*
 ╠➥ *3 Minggu* :   *Rp. 15.000*
@@ -38,7 +38,7 @@ handler.all = async function (m, { isBlocked }) {
 ╠═〘 𝐏𝐄𝐌𝐁𝐀𝐘𝐀𝐑𝐀𝐍 〙 ═
 ╠➥ Pulsa
 ║- 082128475388 ( Pulsa Telkomsel )
-╠═〘 One Botz 〙 ═`.trim(), '𝗢𝗻𝗲 𝗕𝗼𝘁', 'Pemilik\nBot', '#owner', 'Ga jadi deh..', 'gajadi', m)
+╠═〘 Zxyuu Botz 〙 ═`.trim(), '🌟 zxyuubotz', 'Pemilik\nBot', '#owner', 'Ga jadi deh..', 'gajadi', m)
 }
 
     // salam
@@ -68,7 +68,7 @@ handler.all = async function (m, { isBlocked }) {
 if (new Date() * 1 - setting.status > 1000) {
         let _uptime = process.uptime() * 1000
         let uptime = clockString(_uptime)
-        await this.setStatus(`⏲️ 𝖱𝗎𝗇𝗍𝗂𝗆𝖾: ${uptime} | 🛰 𝖬𝗈𝖽𝖾: ${global.opts['self'] ? '𝖯𝗋𝗂𝗏𝖺𝗍𝖾' : setting.groupOnly ? 'Hanya Grup' : '𝖯𝗎𝖻𝗅𝗂𝖼'} | 𝖮𝗇𝖾 𝖡𝗈𝗍 𝖻𝗒 𝖣𝖺𝗏𝗂𝖽`).catch(_ => _)
+        await this.setStatus(`⏲️ Runtime: ${uptime} | 🛰 Mode: ${global.opts['self'] ? 'Bot by romli' : setting.groupOnly ? 'Hanya Grup' : 'Zxyuu'} | RomzBot`).catch(_ => _)
         setting.status = new Date() * 1
     }
 

@@ -1,11 +1,11 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 let info = `
-╠═〘 PEMBAYARAN 〙 ═
+╠═〘 *PEMBAYARAN* 〙 ═
 ╠═ Untuk Pembayaran Via Gopay
-╠➥ *6287892711054*
+╠➥ -
 ║- Owner Bot:
-║- wa.me/6287892711054
-╠═〘 Hyzer 〙 ═
+║- wa.me/6281224804625
+╠═〘 *ZxyuuBotz* 〙 ═
 `.trim()
 
 conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*Sewa Bot*', 'status@broadcast') 

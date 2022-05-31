@@ -57,8 +57,8 @@ fs.watchFile(file_exif, () => {
   require('./lib/exif.json')
 })
 
-global.packname = rom
-global.author = naii
+global.packname = 'romli'
+global.author = 'nai'
 
 // silakan di ganti klo mau
 global.wait = '*WAIT! | Mohon Tunggu Sebentar...*'

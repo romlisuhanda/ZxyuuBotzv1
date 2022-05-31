@@ -29,10 +29,10 @@ Hai *%name!*
 ┗──────────⬣
 %readmore`.trimStart(),
   header: '┏━━ꕥ 𓊈 *%category* 𓊉 ꕥ━⬣',
-  body: '┃ ☂︎ ⎙ %cmd %islimit %isPremium',
+  body: '  ┃ ⎙ %cmd %islimit %isPremium',
   footer: '┗━ꕥ',
   after: `
-*One Bot V. 4.41*
+*ZxyuuBotz. 4.41*
 *Colour Your Life*
 `,
 }
@@ -222,14 +222,14 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `Hai ${name}, ${ucapan()}`.trim(),
-                        "description": `┏━━〔 𝖲𝗍𝖺𝗍𝗎𝗌 〕━ꕥ
+                        "description": `┏━━〔 *ZxyuuBotz* 〕━ꕥ
 ┃✾ 𝖠𝗄𝗍𝗂𝖿 𝖲𝖾𝗅𝖺𝗆𝖺 _*${uptime}*_
-┃✾ 𝖡𝖺𝗍𝖾𝗋𝖺𝗂 _*${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}*_
-┃✾ _*${Object.keys(global.db.data.users).length}*_ 𝖯𝖾𝗇𝗀𝗀𝗎𝗇𝖺
-┃✾ _*${totaljadibot.length}*_ 𝖩𝖺𝖽𝗂 𝖡𝗈𝗍
-┃✾ _*${conn.blocklist.length}*_ 𝖳𝖾𝗋𝖻𝗅𝗈𝖼𝗄
-┃✾ _*${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}*_ 𝖢𝗁𝖺𝗍 𝖳𝖾𝗋𝖻𝖺𝗇𝗇𝖾𝖽
-┃✾ _*${Object.entries(global.db.data.users).filter(user => user[1].banned).length}*_  𝖯𝖾𝗇𝗀𝗀𝗎𝗇𝖺 𝖳𝖾𝗋𝖻𝖺𝗇𝗇𝖾𝖽
+┃✾ *Info Batre Bot* _*${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}*_
+┃✾ _*${Object.keys(global.db.data.users).length}*_ *User*
+┃✾ _*${totaljadibot.length}*_ _*Jadibot*_
+┃✾ _*${conn.blocklist.length}*_ _*Bloked*_
+┃✾ _*${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}*_ _*Banned*_
+┃✾ _*${Object.entries(global.db.data.users).filter(user => user[1].banned).length}*_  _*UserKeban*_
 ┗━━━━━━━━ꕥ
 ┏──『 _*Bot Info*_ 』──⬣
 │⬡ Version : 4.41
@@ -237,12 +237,11 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 │⬡ Host Number : @${global.conn.user.jid.split('@')[0]}
 │⬡ WhatsApp Web Name : ${conn.browserDescription[0]}
 │⬡ WhatsApp Web Version : ${conn.browserDescription[2]}
-│⬡ Platform : VPS
+│⬡ Platform : Heroku
 ┗──────────⬣
-Jangan Lupa Join Ke Grup Bot
-https://tinyurl.com/y3xttxhg`.trim(),
-                        "footerText": "𝖮𝗇𝖾 𝖡𝗈𝗍𝗓\n𝖢𝗈𝗅𝗈𝗎𝗋 𝖸𝗈𝗎𝗋 𝖫𝗂𝖿𝖾\n●‿‿<",
-                        "buttonText": "ᴸⁱˢᵗ ᴹᵉⁿᵘ",
+ZxyuuRomz-XzyuuNaii`.trim(),
+                        "footerText": "ZxyuuBotz",
+                        "buttonText": "Klik Disini Ngab",
                         "listType": "SINGLE_SELECT",
                         "sections": [
                             {
@@ -411,7 +410,7 @@ https://tinyurl.com/y3xttxhg`.trim(),
                         ], "contextInfo": 
 						{ "stanzaId": m.key.id,
                         "participant": "0@s.whatsapp.net",
-                        "remoteJid": "60149431385-1618206438@g.us",
+                        "remoteJid": "6281224804625-1618206438@g.us",
                         "quotedMessage": m.message
 						}
                     }
@@ -494,7 +493,7 @@ https://tinyurl.com/y3xttxhg`.trim(),
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonLoc(m.chat, await(await fetch(flu + teks)).buffer(), text.trim(), `Aktif Selama : ${uptime}\n${week} ${date}`, 'Owner', `${_p}owner`, 'Donasi', `${_p}donasi`, m)
+    await conn.send2ButtonImg(m.chat, await(await fetch(flu + teks)).buffer(), text.trim(), `Aktif Selama : ${uptime}\n${week} ${date}`, 'Owner', `${_p}owner`, 'Donasi', `${_p}donasi`, m)
          await conn.sendFile(m.chat, bzz, 'audio.opus', null, m, true, { duration: 1 })
   } catch (e) {
     conn.reply(m.chat, 'Error 404 x_x', m)

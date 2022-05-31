@@ -11,9 +11,9 @@ let handler = async(m, { conn }) => {
 𝗦𝗶𝗹𝗮𝗸𝗮𝗻 𝗸𝗹𝗶𝗸 𝗽𝗮𝗱𝗮 "𝗟𝗶𝘀𝘁 𝗛𝗮𝗿𝗴𝗮" 𝘂𝗻𝘁𝘂𝗸 𝗺𝗲𝗹𝗶𝗵𝗮𝘁 𝗹𝗶𝘀𝘁.
 ╭═══════════════════════
 ║╭──❉ 〔 𝐕𝐈𝐀 𝐓𝐎𝐏𝐔𝐏 〕 ❉──────
-║│➸ *Digi* : 60149431385
-║│➸ *Umobile*: 60189830350
-║│➸ *Owner*: wa.me/6287892711054
+║│➸ *Pulsa* : 081224804625
+║│➸ *Telkomsel*: 081215710461
+║│➸ *Owner*: wa.me/6281224804625
 ║╰─────────────────────
 ╰═══════════════════════`.trim()
     const button = {
@@ -26,7 +26,7 @@ let handler = async(m, { conn }) => {
         {title: '1 Bulan', description: "Rm20.00\nSewa bot 1 Bulan.", rowId:".masuk"},
         {title: 'Trial', description: "Free\nBot Free 1 Hari.", rowId:".masuk"},
         {title: 'Owner', description: "Chat owner nya jika ada perlu.", rowId:".owner"},
-        {title: 'Rules', description: "Rules Bot LynXzy.", rowId:".snk"},
+        {title: 'Rules', description: "Rules ZxyuuBotz.", rowId:".snk"},
        ] }],
         listType: 1
        }

@@ -13,7 +13,7 @@ const anu = {
 	},
 	"message": {
 		"groupInviteMessage": {
-			"groupJid": "6285240750713-1610340626@g.us",
+			"groupJid": "628122480425-1610340626@g.us",
 			"inviteCode": "mememteeeekkeke",
 			"groupName": "P", 
             "caption": "「 All Group Broadcast 」", 
